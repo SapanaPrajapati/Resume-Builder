@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+    --secondary-color: #1abc9c;
+}
+                      body {
+                        margin: 0;
+                        font-family: Arial, Helvetica, sans-serif;
+                        background-color:rgb(132, 111, 193);
+                        height: 1000px;
+                      }
+                      
+                      .topnav {
+                        padding-left: 1200px;
+                        overflow: hidden;
+                        background-color: #eceaea;
+                      }
+
+                      .topnav a {
+                        float: left;
+                        color: #070707;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 17px;
+                      }
+
+                      .topnav a:hover {
+                        background-color: #ddd;
+                        color: rgb(10, 10, 10);
+                      }
+
+                      .topnav a.active {
+                        background-color: #89a5c0;
+                        color: white;
+                      }
+
+                      .img {
+                      display: flex;
+                      align-items: center;
+                  }
+                  .connect{
+                    padding-bottom: 1000px;
+                  }
+
+.imgbox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+}   
+
+    .welcome {
+      align-items: center;
+      padding-top: 200px;
+      padding-left: 200px;
+      text-decoration: none;
+      font-size: large;
+      color: white;
+    }
+
+    button {
+      border: none;
+      width: 180px;
+      height: 40px;
+      font-size: 12px;
+      color: aliceblue;
+      background-color: rgb(11, 11, 230);
+      font-weight: bold;
+
+    }
+
+    .Rimage img {
+      background-color: transparent;
+      padding-left: 800px;
+      padding-bottom: 2000px;
+    }
+
+    .create {
+      color: whitesmoke;
+      text-decoration: none;
+
+    }
+
+    .resumeT {
+      align-items: right;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a {
+        float: right;
+        display: block;
+      }
+    }
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Create two equal columns that floats next to each other */
+      .left-side {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .image{
+        height: 500px;
+        width: 500px;
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="topnav">
+       
+    <img src="" alt="">
+      <a class="active" href="welcome.html">Home</a>
+      <a href="button.html">Create</a>
+      <a href="signup.html">Signup</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <!-- <div class="welcome">
+    <h1>Job-Cracking Resume Creator</h1>
+    <p>
+      Quickly create your resume and get the job in 2x speed
+    </p>
+    <ul>
+      <li>Use pre-written text examples for your industry</li>
+      <li>for more details contact us</li>
+    </ul>
+    <button><a href="signup.html" class="create">CREATE YOUR RESUME</a></button>
+    <div class="Rimage">
+      <img
+        src="https://i0.wp.com/365webresources.com/wp-content/uploads/2017/07/FREE-INFOGRAPHIC-RESUME.png?resize=540%2C457&ssl=1">
+    </div> -->
+   
+       
+      <div class="welcome">
+        <div class="left-side" style="background-color:none;">
+          <h1>Job-Cracking Resume Creator</h1>
+    <p>
+      Quickly create your resume and get the job in 2x speed
+    </p>
+    <ul>
+      <li>Use pre-written text examples for your industry</li>
+      <li>for more details contact us</li>
+    </ul>
+    <button><a href="signup.html" class="create">CREATE YOUR RESUME</a></button>
+      </div>
+<div class="right-side">
+  <img class="image"
+  src="https://content-management-files.canva.com/cdn-cgi/image/f=auto,q=70/fc015e33-1f60-4437-8238-f0f8d7cd85a9/header_resumes2.jpg">
+</div>
+
+  </div> 
+  
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+       text-align: center;
+       padding-top: 200px;
+       background-image: url("https://www.shutterstock.com/image-illustration/resume-website-white-background-3d-260nw-2082629080.jpg");
+       background-color: #cccccc;
+       height: 500px;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+
+       
+}
+
+/* Full-width input fields */
+input[type=text]{
+  width: 30%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f6f3f3;
+  box-sizing: border-box;
+}
+input[type=password]{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f6f3f3;
+  box-sizing: border-box;
+}
+input[type=phone]{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f6f3f3;
+  box-sizing: border-box;
+}
+h2{
+  font-size: 50px;
+  
+}
+ 
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 17px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 50px;
+  font-size: 30px;
+  align-items: center;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  align-items: center;
+  font-size: 25px;
+  margin-left: 130px;
+  
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.enter{
+  margin-top: 20px;
+  background-color: #d93737;
+  color: #000;
+  width: auto;
+  font-size: 25px;
+  border-radius: 45px;
+}
+a{
+text-decoration: none;
+color: black;
+}
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  border-color: green;
+  border-width: 10px;
+  width: 50%; /
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+.heading{
+    background-color: aquamarine;
+    height: auto;
+}
+.login{
+    color: green;
+    font-weight: bold;
+
+}
+.login:hover{
+    color: red;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+ 
+
+
+</style>
+</head>
+<body>
+
+<H2>SIGN UP FORM </H2>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="signup.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2 class="heading">SIGN UP FORM</h2>
+    </div>
+
+    <div class="container">
+      <b>Username:-</b>
+      <input type="text" placeholder="Enter Username" name="uname" id="uname"><br>
+      <b>Email:-</b>
+      <input type="text" placeholder="Enter Email" name="email" id="email"><br>
+      <b>Phone:-</b>
+      <input type="phone" placeholder="Enter number" name="number" id="number"><br>
+      <label for="psw"><b>Password:-</b></label>
+      <input type="password" placeholder="Enter Password" name="psw"><br>
+    
+      <button type="submit" class="enter"><a href="button.html" >SIGN UP</a></button><br>
+      
+      
+  Already have an account?<a href="Login.html"  class="login">Login</a>
+     
+    </div>
+
+    <!-- <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div> -->
+  </form>
+</div>
+ 
+  
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    localStorage.setItem('Is_Username',Username);
+    localStorage.setItem('Is_Email',Email);
+    localStorage.setItem('Is_Phone',Phone);
+    localStorage.setItem('Is_Password',Password);
+
+
+
+}
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
